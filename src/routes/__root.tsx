@@ -12,7 +12,6 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "../components/site-header";
-import { SiteFooter } from "../components/site-footer";
 
 function NotFoundComponent() {
   return (
@@ -35,7 +34,6 @@ function NotFoundComponent() {
           </div>
         </div>
       </main>
-      <SiteFooter />
     </div>
   );
 }
@@ -155,7 +153,6 @@ function RootComponent() {
         <main className="flex-1">
           <Outlet />
         </main>
-        <SiteFooter />
       </div>
     </QueryClientProvider>
   );
