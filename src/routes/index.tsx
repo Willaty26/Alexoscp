@@ -83,7 +83,7 @@ function HomePage() {
                 <Icon className="size-6" aria-hidden />
               </div>
               <div>
-                <h3 className="font-bold">{title}</h3>
+                <h2 className="font-bold">{title}</h2>
                 <p className="text-sm text-muted-foreground">{desc}</p>
               </div>
             </div>

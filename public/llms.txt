@@ -1,0 +1,11 @@
+# Alex Rojas — Desarrollo Web Profesional
+
+> Desarrollo web rápido, seguro y optimizado para negocios locales en Massachusetts. Certificado en Google IT, Cisco y ciberseguridad.
+
+## Pages
+
+- [Inicio](/): Resumen de servicios, beneficios y testimonios.
+- [Servicios](/servicios): Detalle de los servicios (Escaparate Digital, Catálogo Visual, Captura de Prospectos) y proceso de trabajo.
+- [Sobre mí](/sobre-mi): Historia profesional y certificaciones (Google IT, Cisco CCNA, Linux, Ciberseguridad).
+- [Contacto](/contacto): Formulario, WhatsApp y email para consultas gratuitas.
+- [FAQ](/faq): Preguntas frecuentes sobre tiempos, precios, hosting y soporte.
