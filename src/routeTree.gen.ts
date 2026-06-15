@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreMiRouteImport } from './routes/sobre-mi'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ContactoRouteImport } from './routes/contacto'
@@ -18,6 +19,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const SobreMiRoute = SobreMiRouteImport.update({
   id: '/sobre-mi',
   path: '/sobre-mi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiciosRoute = ServiciosRouteImport.update({
@@ -46,6 +52,7 @@ export interface FileRoutesByFullPath {
   '/contacto': typeof ContactoRoute
   '/faq': typeof FaqRoute
   '/servicios': typeof ServiciosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre-mi': typeof SobreMiRoute
 }
 export interface FileRoutesByTo {
@@ -53,6 +60,7 @@ export interface FileRoutesByTo {
   '/contacto': typeof ContactoRoute
   '/faq': typeof FaqRoute
   '/servicios': typeof ServiciosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre-mi': typeof SobreMiRoute
 }
 export interface FileRoutesById {
@@ -61,14 +69,28 @@ export interface FileRoutesById {
   '/contacto': typeof ContactoRoute
   '/faq': typeof FaqRoute
   '/servicios': typeof ServiciosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre-mi': typeof SobreMiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contacto' | '/faq' | '/servicios' | '/sobre-mi'
+  fullPaths:
+    | '/'
+    | '/contacto'
+    | '/faq'
+    | '/servicios'
+    | '/sitemap.xml'
+    | '/sobre-mi'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contacto' | '/faq' | '/servicios' | '/sobre-mi'
-  id: '__root__' | '/' | '/contacto' | '/faq' | '/servicios' | '/sobre-mi'
+  to: '/' | '/contacto' | '/faq' | '/servicios' | '/sitemap.xml' | '/sobre-mi'
+  id:
+    | '__root__'
+    | '/'
+    | '/contacto'
+    | '/faq'
+    | '/servicios'
+    | '/sitemap.xml'
+    | '/sobre-mi'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -76,6 +98,7 @@ export interface RootRouteChildren {
   ContactoRoute: typeof ContactoRoute
   FaqRoute: typeof FaqRoute
   ServiciosRoute: typeof ServiciosRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SobreMiRoute: typeof SobreMiRoute
 }
 
@@ -86,6 +109,13 @@ declare module '@tanstack/react-router' {
       path: '/sobre-mi'
       fullPath: '/sobre-mi'
       preLoaderRoute: typeof SobreMiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/servicios': {
@@ -124,6 +154,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactoRoute: ContactoRoute,
   FaqRoute: FaqRoute,
   ServiciosRoute: ServiciosRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SobreMiRoute: SobreMiRoute,
 }
 export const routeTree = rootRouteImport
