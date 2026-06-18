@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>Sobre mí — Alex Rojas | Desarrollo Web certificado</title>
+<meta name="description" content="Soy Alex Miguel Rojas. Construyo páginas web con infraestructura sólida: Google IT, Linux Essentials, Cisco CCNA y fundamentos de ciberseguridad.">
+<link rel="canonical" href="https://willaty26.github.io/Alexoscp/sobre-mi.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sobre mí — Alex Rojas">
+<meta property="og:description" content="No soy el típico diseñador web. Construyo infraestructura rápida, segura y optimizada.">
+<meta property="og:url" content="https://willaty26.github.io/Alexoscp/sobre-mi.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Ctext x='50%25' y='54%25' font-family='Inter,sans-serif' font-size='38' font-weight='800' text-anchor='middle' fill='%2300e5ff'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="./" class="brand">Digitalizate ya!</a>
+    <nav class="nav">
+      <a href="./">Inicio</a>
+      <a href="./servicios.html">Servicios</a>
+      <a href="./sobre-mi.html" class="active">Sobre mí</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contacto.html">Contacto</a>
+      <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
+    </nav>
+    <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" class="mobile-nav">
+    <a href="./">Inicio</a>
+    <a href="./servicios.html">Servicios</a>
+    <a href="./sobre-mi.html" class="active">Sobre mí</a>
+    <a href="./faq.html">FAQ</a>
+    <a href="./contacto.html">Contacto</a>
+    <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-wa">WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container" style="max-width:780px">
+      <h1>No soy el típico diseñador web.<br><span class="primary glow">Construyo infraestructura.</span></h1>
+      <div class="about-prose mt">
+        <p>Hola, soy <strong>Alex Miguel Rojas</strong>. Muchos creadores de páginas web solo se preocupan por que el sitio se vea bonito. Yo me aseguro de que sea rápido, seguro y funcione impecablemente por debajo.</p>
+        <p>Cuento con certificaciones oficiales en <strong>Google IT Support</strong>, además de <strong>Linux Essentials</strong>, <strong>Introduction to Cybersecurity</strong> y <strong>Redes (CCNA) por Cisco</strong>. Esto significa que tu presencia digital estará construida sobre cimientos técnicos sólidos, configurada con altos estándares de seguridad y optimizada para no fallar.</p>
+        <p>Mi enfoque ético de trabajo garantiza total transparencia: sin costos ocultos, sin lenguaje técnico confuso, solo resultados reales para hacer crecer tu negocio local.</p>
+      </div>
+      <div class="tags">
+        <span class="tag">Google IT Certified</span>
+        <span class="tag">Cisco Linux Essentials</span>
+        <span class="tag">Cisco CCNA Networking</span>
+        <span class="tag">Cybersecurity</span>
+      </div>
+      <div class="mt"><a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" rel="noopener" class="btn-cta">Hablemos de tu proyecto</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">© <span id="yr"></span> Alex Rojas — Digitalízate ya. Massachusetts, EE. UU.</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="./script.js"></script>
+</body>
+</html>
