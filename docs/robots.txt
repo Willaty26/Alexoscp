@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://willaty26.github.io/Alexoscp/sitemap.xml
