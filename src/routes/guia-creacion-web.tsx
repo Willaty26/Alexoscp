@@ -144,7 +144,11 @@ function GuiaPage() {
             clientes.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <CtaButton href={WHATSAPP_URL} external>
+            <CtaButton
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Hablemos por WhatsApp
             </CtaButton>
             <Link
