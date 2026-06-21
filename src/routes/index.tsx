@@ -294,7 +294,7 @@ function HomePage() {
                 img: "/portfolio/photographer.webp",
                 alt: "Sitio web demo para fotógrafo profesional",
                 blur: false,
-                href: undefined,
+                href: "https://page-cam-demo.lovable.app/",
               },
               {
                 title: "Sitio Web para Empresa de Roofing",
@@ -302,7 +302,7 @@ function HomePage() {
                 img: "/portfolio/roofing.webp",
                 alt: "Sitio web demo para empresa de roofing",
                 blur: false,
-                href: undefined,
+                href: "https://fabians-roofing-demo.lovable.app/",
               },
             ].map((p) => (
               <article
