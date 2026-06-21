@@ -647,6 +647,10 @@
       'home.port.1.d': 'Digitale Einladung mit Countdown, Fotogalerie, Karte des Veranstaltungsorts und RSVP-Bestätigung.',
       'home.port.2.t': 'Einladung für besondere Anlässe',
       'home.port.2.d': 'Veranstaltungseinladung mit Ortsdetails, Datum, interaktiver Karte und individuellem Design.',
+      'home.port.3.t': 'Website für professionellen Fotografen',
+      'home.port.3.d': 'Komplette Website für Hochzeits- und Eventfotografen: Foto-Portfolio, Service-Pakete, Event-Bereich und Kontaktformular.',
+      'home.port.4.t': 'Website für Dachdeckerunternehmen',
+      'home.port.4.d': 'Komplette Website für ein Dachdeckerunternehmen in Massachusetts: Service-Seiten, Projektgalerie, Über uns und Kontaktformular.',
       'home.port.privacy': 'Spezifische Details aus Datenschutzgründen ausgeblendet.'
     }
   };
