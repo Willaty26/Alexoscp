@@ -395,6 +395,10 @@
       'home.port.1.d': 'Convite digital com contagem regressiva, galeria de fotos, mapa do local e confirmação de presença (RSVP).',
       'home.port.2.t': 'Convite de Evento Especial',
       'home.port.2.d': 'Convite de evento com detalhes do local, data, mapa interativo e design personalizado.',
+      'home.port.3.t': 'Site para Fotógrafo Profissional',
+      'home.port.3.d': 'Site completo para fotógrafo de casamentos e eventos: portfólio de fotos, pacotes de serviço, seção de eventos e formulário de contato.',
+      'home.port.4.t': 'Site para Empresa de Telhados',
+      'home.port.4.d': 'Site completo para empresa de telhados em Massachusetts: páginas de serviços, galeria de projetos, sobre nós e formulário de contato.',
       'home.port.privacy': 'Detalhes específicos ocultos por privacidade.'
     },
 
