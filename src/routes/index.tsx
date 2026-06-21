@@ -122,6 +122,97 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Invitaciones Digitales — Precios */}
+      <section className="border-t border-border bg-card/40 px-5 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center text-3xl font-extrabold md:text-4xl">
+            Invitaciones <span className="text-primary">Digitales</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
+            Invitaciones digitales personalizadas para bodas, quinceañeras, baby
+            showers y eventos especiales. Diseño único, rápido y elegante,
+            accesible desde cualquier celular.
+          </p>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Básico",
+                price: "Desde $80",
+                popular: false,
+                items: [
+                  "Una página de invitación personalizada",
+                  "Diseño ajustado a la plantilla",
+                  "Hasta 1 ronda de cambios",
+                ],
+              },
+              {
+                title: "Estándar",
+                price: "Desde $130",
+                popular: true,
+                items: [
+                  "Invitación personalizada",
+                  "RSVP que llega directo a tu correo",
+                  "Galería de fotos",
+                  "Hasta 2 rondas de cambios",
+                ],
+              },
+              {
+                title: "Premium",
+                price: "Desde $180",
+                popular: false,
+                items: [
+                  "Todo lo del paquete Estándar",
+                  "Dominio personalizado el primer año",
+                  "Cuenta regresiva y mapa interactivo",
+                  "Hasta 3 rondas de cambios",
+                ],
+              },
+            ].map((p) => (
+              <article
+                key={p.title}
+                className={`relative rounded-3xl border bg-card p-8 transition-all duration-300 hover:-translate-y-2 ${
+                  p.popular
+                    ? "border-primary/60 shadow-[var(--shadow-glow)]"
+                    : "border-border hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+                }`}
+              >
+                {p.popular && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-primary-foreground">
+                    Más Popular
+                  </span>
+                )}
+                <h3 className="text-xl font-bold">{p.title}</h3>
+                <div className="mt-2 text-3xl font-extrabold text-primary">
+                  {p.price}
+                </div>
+                <ul className="mt-6 space-y-3 text-sm">
+                  {p.items.map((it) => (
+                    <li key={it} className="flex items-start gap-2">
+                      <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <p className="mx-auto mt-10 max-w-xl text-center text-sm text-muted-foreground">
+            El precio final depende de los detalles del evento. Escríbeme por
+            WhatsApp para tu cotización exacta.
+          </p>
+          <div className="mt-6 text-center">
+            <CtaButton
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cotizar por WhatsApp
+            </CtaButton>
+          </div>
+        </div>
+      </section>
+
+
       {/* Testimonios */}
       <section className="border-t border-border bg-card/40 px-5 py-20">
         <div className="mx-auto max-w-6xl">
