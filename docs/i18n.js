@@ -143,6 +143,10 @@
       'home.port.1.d': 'Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).',
       'home.port.2.t': 'Invitación de Retiro / Evento Especial',
       'home.port.2.d': 'Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.',
+      'home.port.3.t': 'Sitio Web para Fotógrafo Profesional',
+      'home.port.3.d': 'Sitio completo para fotógrafo de bodas y eventos: portafolio de fotos, paquetes de servicio, sección de eventos y formulario de contacto.',
+      'home.port.4.t': 'Sitio Web para Empresa de Roofing',
+      'home.port.4.d': 'Sitio completo para empresa de techado en Massachusetts: páginas de servicios, galería de proyectos, sobre nosotros y formulario de contacto.',
       'home.port.privacy': 'Detalles específicos ocultos por privacidad.'
     },
 
