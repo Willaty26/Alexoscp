@@ -270,39 +270,66 @@ function HomePage() {
             Una muestra del estilo de invitaciones digitales que entrego. Datos
             sensibles difuminados por privacidad de los clientes.
           </p>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 title: "Invitación de Boda Digital",
                 desc: "Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).",
                 img: "/portfolio/wedding_es.webp",
                 alt: "Invitación de boda digital — vista previa difuminada por privacidad",
+                blurred: true,
               },
               {
                 title: "Invitación de Retiro / Evento Especial",
                 desc: "Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.",
                 img: "/portfolio/retirement_es.webp",
                 alt: "Invitación de evento especial — vista previa difuminada por privacidad",
+                blurred: true,
               },
-            ].map((p) => (
-              <article
-                key={p.title}
-                className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
-              >
-                <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
-                  <img
-                    src={p.img}
-                    alt={p.alt}
-                    loading="lazy"
-                    className="h-full w-full scale-105 object-cover blur-[4px] saturate-95 transition-all duration-300 group-hover:blur-[2.5px] group-hover:saturate-100"
-                  />
-                </div>
-                <div className="p-7">
-                  <h3 className="text-xl font-bold">{p.title}</h3>
-                  <p className="mt-3 text-muted-foreground">{p.desc}</p>
-                </div>
-              </article>
-            ))}
+              {
+                title: "Sitio Web — Fabian's Roofing (Demo)",
+                desc: "Sitio web profesional para empresa de techado: presentación de servicios, formulario de contacto y diseño optimizado para móvil.",
+                img: "/portfolio/roofing.webp",
+                alt: "Demo de sitio web Fabian's Roofing",
+                blurred: false,
+                href: "https://fabians-roofing-demo.lovable.app/",
+              },
+            ].map((p) => {
+              const Wrapper = p.href ? "a" : "div";
+              const wrapperProps = p.href
+                ? { href: p.href, target: "_blank", rel: "noopener noreferrer" }
+                : {};
+              return (
+                <article
+                  key={p.title}
+                  className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:-translate-y-2 hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+                >
+                  <Wrapper {...wrapperProps} className="block">
+                    <div className="aspect-[732/600] overflow-hidden border-b border-border bg-background">
+                      <img
+                        src={p.img}
+                        alt={p.alt}
+                        loading="lazy"
+                        className={`h-full w-full scale-105 object-cover transition-all duration-300 ${
+                          p.blurred
+                            ? "blur-[4px] saturate-95 group-hover:blur-[2.5px] group-hover:saturate-100"
+                            : "group-hover:scale-110"
+                        }`}
+                      />
+                    </div>
+                    <div className="p-7">
+                      <h3 className="text-xl font-bold">{p.title}</h3>
+                      <p className="mt-3 text-muted-foreground">{p.desc}</p>
+                      {p.href && (
+                        <span className="mt-4 inline-block text-sm font-semibold text-primary group-hover:text-glow">
+                          Ver demo en vivo →
+                        </span>
+                      )}
+                    </div>
+                  </Wrapper>
+                </article>
+              );
+            })}
           </div>
           <p className="mt-8 text-center text-xs text-muted-foreground">
             Detalles específicos ocultos por privacidad.
