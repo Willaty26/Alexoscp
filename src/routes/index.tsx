@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Rocket, Camera, Settings2, ShieldCheck, Zap, Search } from "lucide-react";
+import { Rocket, Camera, Settings2, ShieldCheck, Zap, Search, Check } from "lucide-react";
 import { CtaButton } from "@/components/cta-button";
+import { WHATSAPP_URL } from "@/components/site-header";
 import { WHATSAPP_URL } from "@/components/site-header";
 
 export const Route = createFileRoute("/")({
