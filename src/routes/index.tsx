@@ -147,7 +147,7 @@ function HomePage() {
               },
               {
                 title: "Estándar",
-                price: "Desde $130",
+                price: "Desde $140",
                 popular: true,
                 items: [
                   "Invitación personalizada",
@@ -158,7 +158,7 @@ function HomePage() {
               },
               {
                 title: "Premium",
-                price: "Desde $180",
+                price: "Desde $200",
                 popular: false,
                 items: [
                   "Todo lo del paquete Estándar",
