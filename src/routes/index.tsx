@@ -270,19 +270,29 @@ function HomePage() {
             Una muestra del estilo de invitaciones digitales que entrego. Datos
             sensibles difuminados por privacidad de los clientes.
           </p>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 title: "Invitación de Boda Digital",
                 desc: "Invitación digital con cuenta regresiva, galería de fotos, mapa del lugar y confirmación de asistencia (RSVP).",
                 img: "/portfolio/wedding_es.webp",
                 alt: "Invitación de boda digital — vista previa difuminada por privacidad",
+                blurred: true,
               },
               {
                 title: "Invitación de Retiro / Evento Especial",
                 desc: "Invitación de evento con detalles del lugar, fecha, mapa interactivo y diseño personalizado.",
                 img: "/portfolio/retirement_es.webp",
                 alt: "Invitación de evento especial — vista previa difuminada por privacidad",
+                blurred: true,
+              },
+              {
+                title: "Sitio Web — Fabian's Roofing (Demo)",
+                desc: "Sitio web profesional para empresa de techado: presentación de servicios, formulario de contacto y diseño optimizado para móvil.",
+                img: "/portfolio/roofing.webp",
+                alt: "Demo de sitio web Fabian's Roofing",
+                blurred: false,
+                href: "https://fabians-roofing-demo.lovable.app/",
               },
             ].map((p) => (
               <article
