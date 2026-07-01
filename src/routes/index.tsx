@@ -230,47 +230,15 @@ function HomePage() {
       </section>
 
 
-      {/* Testimonios */}
+      {/* Lo que dicen mis clientes */}
       <section className="border-t border-border bg-card/40 px-5 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center text-3xl font-extrabold md:text-4xl">
             Lo que dicen mis <span className="text-primary">clientes</span>
           </h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {[
-              {
-                name: "María Hernández",
-                role: "Salón de belleza, Lawrence MA",
-                quote:
-                  "Alex me entregó la página en 5 días. Empecé a recibir mensajes de clientes nuevos por WhatsApp esa misma semana.",
-              },
-              {
-                name: "Giana Pérez",
-                role: "Invitación de bodas, Lowell MA",
-                quote:
-                  "Me encantó todo, se hizo tal como lo quería, con todo mis detalles, todo lo hablado. Les recomiendo hacer sus invitaciones y sus páginas web con él. Buen precio y a tu gusto. Todos mis invitados quedaron encantados. No se van a arrepentir.",
-              },
-              {
-                name: "Diana Vargas",
-                role: "Repostería casera, Boston MA",
-                quote:
-                  "Explica todo en español claro, sin tecnicismos. La página se ve bonita y carga rapidísimo en el celular.",
-              },
-            ].map((t) => (
-              <figure
-                key={t.name}
-                className="rounded-3xl border border-border bg-card p-6"
-              >
-                <blockquote className="text-sm leading-relaxed text-foreground">
-                  “{t.quote}”
-                </blockquote>
-                <figcaption className="mt-5 border-t border-border pt-4">
-                  <div className="font-semibold">{t.name}</div>
-                  <div className="text-xs text-muted-foreground">{t.role}</div>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
+          <p className="mx-auto mt-6 max-w-xl text-center text-sm text-muted-foreground">
+            Testimonios de clientes reales — próximamente.
+          </p>
         </div>
       </section>
 
