@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Rocket, Camera, Settings2, ShieldCheck, Zap, Search, Check } from "lucide-react";
+import { Rocket, Camera, Settings2, ShieldCheck, Zap, Search, Check, ChevronDown } from "lucide-react";
 import { CtaButton } from "@/components/cta-button";
 import { WHATSAPP_URL } from "@/components/site-header";
 
@@ -81,6 +81,14 @@ function HomePage() {
             Escríbeme aquí
           </a>
         </p>
+        <div className="mt-6 flex flex-col items-center gap-2 md:hidden">
+          <span className="text-xs text-muted-foreground">Desliza hacia abajo</span>
+          <ChevronDown
+            className="size-5 text-primary"
+            style={{ animation: "bounce-down 1.5s ease-in-out infinite" }}
+            aria-hidden
+          />
+        </div>
       </section>
 
       {/* Beneficios rápidos */}

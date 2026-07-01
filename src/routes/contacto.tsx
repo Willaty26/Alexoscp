@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { MessageCircle, Mail, Clock } from "lucide-react";
+import { MessageCircle, Mail, Clock, Smartphone } from "lucide-react";
 import { WHATSAPP_URL } from "@/components/site-header";
 
 export const Route = createFileRoute("/contacto")({
@@ -49,20 +49,32 @@ function ContactPage() {
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {/* Info de contacto */}
           <div className="space-y-5">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-start gap-4 rounded-3xl border border-border bg-card p-6 transition-all hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
-            >
-              <MessageCircle className="size-6 text-primary" aria-hidden />
-              <div>
-                <div className="font-bold">WhatsApp directo</div>
-                <div className="text-sm text-muted-foreground">
-                  La forma más rápida de contactarme.
-                </div>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-4 rounded-3xl border border-border bg-card p-6 transition-all hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+          >
+            <MessageCircle className="size-6 text-primary" aria-hidden />
+            <div>
+              <div className="font-bold">WhatsApp directo</div>
+              <div className="text-sm text-muted-foreground">
+                La forma más rápida de contactarme.
               </div>
-            </a>
+            </div>
+          </a>
+          <a
+            href="sms:+19783324273"
+            className="flex items-start gap-4 rounded-3xl border border-border bg-card p-6 transition-all hover:border-primary/60 hover:shadow-[var(--shadow-glow)]"
+          >
+            <Smartphone className="size-6 text-primary" aria-hidden />
+            <div>
+              <div className="font-bold">Mensaje de texto (SMS)</div>
+              <div className="text-sm text-muted-foreground">
+                Escribe directo a mi celular si prefieres SMS.
+              </div>
+            </div>
+          </a>
             <a
               href="mailto:hola@alexoscp.com"
               className="flex items-start gap-4 rounded-3xl border border-border bg-card p-6 transition-all hover:border-primary/60"
